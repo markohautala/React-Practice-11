@@ -1,6 +1,6 @@
 import React from "react"
-import css from "./css/PostItem.module.css";
-
+/* import css from "./css/PostItem.module.css";
+ */
 
 function PostItem(props) {
     return (
@@ -8,7 +8,7 @@ function PostItem(props) {
             {Array.isArray(props.savedPosts) ? props.savedPosts.map(post => {
                 const {title, name, image, description} = post;
                 return (
-                    <div className={css.SearchItem} key={title}>
+                    <div /* className={css.SearchItem} */ key={title}>
                         <p>{title}</p>
                         <p>{name}</p>
                         <img src={image} alt="random"/>
